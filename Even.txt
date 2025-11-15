@@ -1,0 +1,22 @@
+Accounting/Finance
+Aerospace/Aviation
+Automotive
+Business Development
+Clerical/Administrative
+Consumer Goods
+Education/Training
+Engineering
+Green
+Hospitality/Travel
+Installation/Maintenance
+Internet
+Law Enforcement/Security
+Management/Executive
+Marketing
+Pharmaceutical/Biotech
+QA/Quality Control
+Restaurant/Food Service
+Sales
+Skilled Labor
+Telecommunications
+Other

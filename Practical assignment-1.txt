@@ -1,0 +1,16 @@
+TABLE-1 
+create table courses(course_id integer primary key autoincrement, course_name varchar2(25) check(length(course_name)<=25));
+
+insert into courses(course_name) values('BCA'),('BBA'),('BCOM'),('BSC'),('BTECH');
+
+---------------------------------------------------------------------------------------------------------------------------
+
+TABLE-2
+create table semester(sem_id integer primary key autoincrement, sem_tag varchar2(15) check(length(sem_tag)<=25));
+
+insert into semester(sem_tag) values('SEM-I'),('SEM-II'),('SEM-III'),('SEM-IV'),('SEM-V'),('SEM-VI');
+
+---------------------------------------------------------------------------------------------------------------------------
+
+TABLE-3
+CREATE TABLE subjects(sub_id integer primary key autoincrement, sub_code varchar2(15) check(length(sub_code)<=15), sub_name varchar2(25) check(length(sub_name)<=25), course_id integer references courses(course_id), sem_id integer references semester(sem_id));
