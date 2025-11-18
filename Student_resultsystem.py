@@ -35,9 +35,13 @@ def topper_students():
         cur = con.cursor()
         cur.execute("select Student_name, Student_gpa from students_data order by student_gpa desc limit 3")
         data = cur.fetchall()
-        print("Top 3 Students are :")
-        for row in data:
-            print("Name: ", row[0], "GPA: ", row[1])
+        if(data == None):
+            print("No Data Found")
+            return False
+        else:
+            print("Top 3 Students are :")
+            for row in data:
+                print("Name: ", row[0], "GPA: ", row[1])
     except sqlite3.Error as e:
         print("Problem in fetching Data: ",e)
     finally:
