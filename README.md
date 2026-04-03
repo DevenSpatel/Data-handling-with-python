@@ -23,14 +23,6 @@ This project demonstrates how to work with data using **Python**, including hand
 
 ---
 
-## 📸 Output Examples
-
-* Graphs using Matplotlib
-* Processed CSV data
-* SQLite database operations
-
----
-
 ## 🎯 Purpose
 
 This project is created for learning and practicing:
